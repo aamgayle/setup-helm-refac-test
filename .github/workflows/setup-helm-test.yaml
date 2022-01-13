@@ -12,22 +12,22 @@ jobs:
           version: 'v3.5.0'
         id: install
   Testing setup-helm on Windows:
-  runs-on: windows-latest
-  steps:
-    - name: Check out repository code
-      uses: actions/checkout@v2
-    - name: Testing setup-helm
-      uses: taakleton/setup-helm@v1
-      with:
-        version: 'v3.5.0'
-      id: install
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Testing setup-helm
+        uses: taakleton/setup-helm@v1
+        with:
+          version: 'v3.5.0'
+        id: install
   Testing setup-helm on macos:
-  runs-on: macos-11
-  steps:
-    - name: Check out repository code
-      uses: actions/checkout@v2
-    - name: Testing setup-helm
-      uses: taakleton/setup-helm@v1
-      with:
-        version: 'v3.5.0'
-      id: install
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Testing setup-helm
+        uses: taakleton/setup-helm@v1
+        with:
+          version: 'v3.5.0'
+        id: install
