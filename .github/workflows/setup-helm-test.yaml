@@ -11,6 +11,8 @@ jobs:
         with:
           version: 'v3.5.0'
         id: install
+      - run:
+          helm version
   Windows-Test:
     runs-on: windows-latest
     steps:
@@ -21,6 +23,8 @@ jobs:
         with:
           version: 'v3.5.0'
         id: install
+      - run:
+          helm version
   Macos-Test:
     runs-on: macos-latest
     steps:
@@ -31,3 +35,5 @@ jobs:
         with:
           version: 'v3.5.0'
         id: install
+      - run:
+          helm version
