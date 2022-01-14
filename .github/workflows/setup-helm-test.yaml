@@ -1,7 +1,7 @@
 name: setup-helm action test
 on: [push]
 jobs:
-  Ubuntu-Test:
+  Ubuntu-Latest-Test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -13,7 +13,19 @@ jobs:
         id: install
       - run:
           helm version
-  Windows-Test:
+  Ubuntu-18-Test:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Testing setup-helm
+        uses: taakleton/setup-helm@v1
+        with:
+          version: 'latest'
+        id: install
+      - run:
+          helm version
+  Windows-Latest-Test:
     runs-on: windows-latest
     steps:
       - name: Check out repository code
@@ -25,8 +37,44 @@ jobs:
         id: install
       - run:
           helm version
-  Macos-Test:
+  Windows-2022-Test:
+    runs-on: windows-2022
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Testing setup-helm
+        uses: taakleton/setup-helm@v1
+        with:
+          version: 'latest'
+        id: install
+      - run:
+          helm version
+  Windows-2016-Test:
+    runs-on: windows-2016
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Testing setup-helm
+        uses: taakleton/setup-helm@v1
+        with:
+          version: 'latest'
+        id: install
+      - run:
+          helm version
+  Macos-Latest-Test:
     runs-on: macos-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Testing setup-helm
+        uses: taakleton/setup-helm@v1
+        with:
+          version: 'latest'
+        id: install
+      - run:
+          helm version
+  Macos-11-Test:
+    runs-on: macos-11
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
