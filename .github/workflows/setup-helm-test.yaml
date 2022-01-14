@@ -9,7 +9,7 @@ jobs:
       - name: Testing setup-helm
         uses: taakleton/setup-helm@v1
         with:
-          version: 'latest'
+          version: '3.5.0'
         id: install
       - run:
           helm version
@@ -21,7 +21,7 @@ jobs:
       - name: Testing setup-helm
         uses: taakleton/setup-helm@v1
         with:
-          version: 'latest'
+          version: '3.5.0'
         id: install
       - run:
           helm version
@@ -33,7 +33,7 @@ jobs:
       - name: Testing setup-helm
         uses: taakleton/setup-helm@v1
         with:
-          version: 'latest'
+          version: '3.5.0'
         id: install
       - run:
           helm version
@@ -45,7 +45,7 @@ jobs:
       - name: Testing setup-helm
         uses: taakleton/setup-helm@v1
         with:
-          version: 'latest'
+          version: '3.5.0'
         id: install
       - run:
           helm version
@@ -57,7 +57,7 @@ jobs:
       - name: Testing setup-helm
         uses: taakleton/setup-helm@v1
         with:
-          version: 'latest'
+          version: '3.5.0'
         id: install
       - run:
           helm version
@@ -69,7 +69,7 @@ jobs:
       - name: Testing setup-helm
         uses: taakleton/setup-helm@v1
         with:
-          version: 'latest'
+          version: '3.5.0'
         id: install
       - run:
           helm version
@@ -81,7 +81,7 @@ jobs:
       - name: Testing setup-helm
         uses: taakleton/setup-helm@v1
         with:
-          version: 'latest'
+          version: '3.5.0'
         id: install
       - run:
           helm version
