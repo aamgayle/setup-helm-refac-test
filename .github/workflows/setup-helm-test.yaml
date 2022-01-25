@@ -1,6 +1,18 @@
 name: setup-helm action test
 on: [push]
 jobs:
+  Ubuntu-Latest-Version-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Testing setup-helm
+        uses: taakleton/setup-helm@v1
+        with:
+          version: 'latest'
+        id: install
+      - run:
+          helm version
   Ubuntu-Latest-Test:
     runs-on: ubuntu-latest
     steps:
